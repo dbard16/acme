@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <h1>Acme Shop of Goodies!</h1>
+  </head>
+
+  <body>
+
+
+
+    <div>
+    {% for product in products %}
+
+    <li> {{product.product}} </li>
+    <li> {{product.rating}} </li>
+
+    {% endfor %}
+
+    </div>
+  </body>
+
+</html>
