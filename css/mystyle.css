@@ -1,0 +1,22 @@
+/*html{
+  background-image: url('acmebackground.jpg') no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:;
+ /* background-color: green;
+
+}*/
+
+body, html{
+  height: 100%;
+  margin: 0;
+}
+
+.bg{
+  background-image: url('acmebackground.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}

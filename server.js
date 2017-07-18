@@ -9,6 +9,7 @@ var fs = require('fs');
 
 var bodyParser = require('body-parser');
 app.use('/vendor', express.static(path.join((__dirname, 'node_modules'))));
+app.use('/css', express.static(path.join((__dirname, 'css'))));
 
 nunjucks.configure('views', {noCache: true});
 app.set('view engine', 'html');
@@ -32,7 +33,7 @@ app.use('/', routes);
 app.listen(port,function(){
   console.log('server listening');
 })
-//commentaaaaa
+//commenta
 
 
 
