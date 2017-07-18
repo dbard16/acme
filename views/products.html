@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link rel = 'stylesheet' href= '/vendor/bootstrap/dist/css/bootstrap.css'/>
+    <h1>Acme Shop of Goodies!</h1>
+  </head>
+
+  <body>
+
+  <a href = "/"> Home </a>
+
+    <table class ="tabe table-striped">
+
+      <thead>
+        <tr>
+          <th>Product </th>
+          <th>Rating </th>
+        </tr>
+      </thead>
+{% for product in products %}
+      <tbody>
+        <tr>
+          <td> <a href = "/product/{{product.id}}"> {{product.product}}</a></td>
+          <td> {{product.rating}} </td>
+        </tr>
+      </tbody>
+
+
+    {% endfor %}
+
+    <table>
+    <div>
+
+    {% if showForm %}
+      <form action="/products" method="POST">
+        <div class = 'form-group'>
+        <input class = 'form-control' name = 'product' placeholder= 'product' />
+
+        <div class = 'form-group'>
+        <input class = 'form-control' name = 'rating' placeholder= 'rating' />
+
+        <div class = 'form-group'>
+          <button class = 'btn btn-primary'> Add </button>
+        </div>
+
+        {% endif %}
+    </div>
+  </body>
+
+</html>

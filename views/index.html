@@ -1,20 +1,15 @@
 <html>
   <head>
-    <h1>Acme Shop of Goodies!</h1>
+    <link rel = 'stylesheet' href= '/vendor/bootstrap/dist/css/bootstrap.css'/>
+    <div class = 'page-header' font-family: "courier">Acme Shop of Goodies!</div>
   </head>
 
-  <body>
-
-
-
+  <body  class = 'container-fluid'>
     <div>
-    {% for product in products %}
-
-    <li> {{product.product}} </li>
-    <li> {{product.rating}} </li>
-
-    {% endfor %}
-
+      <a href = '/products'> All Products </a>
+    </div>
+    <div>
+      Our top product is {{ max }}
     </div>
   </body>
 
