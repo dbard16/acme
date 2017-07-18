@@ -19,9 +19,9 @@ function add(product, rating){
   if(!num){
     throw 'Please enter a number!';
   }
+var id = Math.random.floor()*1000
 
-
-  data.push({product: product, rating: rating, id: data.length});
+  data.push({product: product, rating: rating, id:id });
   }
 
 
